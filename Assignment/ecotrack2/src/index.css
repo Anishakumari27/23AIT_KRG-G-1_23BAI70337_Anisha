@@ -1,0 +1,42 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #f0f7f4;
+  --surface: #ffffff;
+  --border: #d4e8df;
+  --primary: #1a6b4a;
+  --primary-light: #e6f4ee;
+  --accent: #34c77b;
+  --text: #1c2b24;
+  --muted: #6b8f7e;
+  --danger: #e05252;
+  --radius: 16px;
+  --shadow: 0 4px 24px rgba(26, 107, 74, 0.08);
+  --font-display: 'DM Serif Display', serif;
+  --font-body: 'DM Sans', sans-serif;
+}
+
+body {
+  background: var(--bg);
+  font-family: var(--font-body);
+  color: var(--text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { text-decoration: none; color: inherit; }
+button { font-family: var(--font-body); }
+
+/* Shared card */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem 2rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 1.5rem;
+}

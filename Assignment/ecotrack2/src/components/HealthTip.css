@@ -1,0 +1,55 @@
+.health-tip__label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+
+.health-tip__loading {
+  color: var(--muted);
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.health-tip__error {
+  color: var(--danger);
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.health-tip__quote {
+  background: linear-gradient(135deg, #e8f5ee 0%, #f0f9f4 100%);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 10px 10px 0;
+  padding: 1rem 1.25rem;
+  font-style: italic;
+  color: var(--text);
+  font-size: 0.975rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.health-tip__btn {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 7px 14px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--muted);
+  transition: border-color 0.18s, color 0.18s;
+}
+
+.health-tip__btn:hover:not(:disabled) {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.health-tip__btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

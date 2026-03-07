@@ -1,0 +1,119 @@
+.wt__title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 0.35rem;
+}
+
+.wt__sub {
+  color: black
+  font-size: 0.9rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Goal reached badge */
+.wt__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #e6f9f0;
+  border: 1px solid #a8e6c5;
+  color: black;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 8px 18px;
+  border-radius: 100px;
+  margin-bottom: 1.25rem;
+  animation: badge-pop 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes badge-pop {
+  from { transform: scale(0.88); opacity: 0; }
+  to   { transform: scale(1);    opacity: 1; }
+}
+
+/* Buttons */
+.wt__btn-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.wt__btn {
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-weight: 600;
+  transition: background 0.15s, transform 0.1s, opacity 0.15s;
+}
+
+.wt__btn:active { transform: scale(0.95); }
+
+.wt__btn--add {
+  width: 52px; height: 52px;
+  font-size: 1.6rem;
+  background: rgb(215, 208, 208);
+  color: black;
+  border-radius: 12px;
+}
+.wt__btn--add:hover { background: #145a3d; }
+
+.wt__btn--remove {
+  width: 52px; height: 52px;
+  font-size: 1.6rem;
+  background: var(--primary-light);
+  color: black;
+  border-radius: 12px;
+}
+.wt__btn--remove:hover:not(:disabled) { background: #cde8d8; }
+.wt__btn--remove:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.wt__btn--reset {
+  padding: 10px 20px;
+  font-size: 0.875rem;
+  background: #fef3f3;
+  color: black;
+  border: 1px solid #f5d0d0;
+}
+.wt__btn--reset:hover { background: #fde8e8; }
+
+.wt__btn--save {
+  padding: 10px 18px;
+  font-size: 0.875rem;
+  background: var(--primary);
+  color: #fff;
+}
+.wt__btn--save:hover { background: #145a3d; }
+
+/* Goal row */
+.wt__goal-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.wt__goal-label {
+  font-size: 0.875rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.wt__goal-input {
+  width: 72px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 9px 10px;
+  font-size: 1rem;
+  font-family: var(--font-body);
+  text-align: center;
+  outline: none;
+  transition: border-color 0.18s;
+}
+.wt__goal-input:focus { border-color: var(--accent); }
